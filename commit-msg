@@ -1,5 +1,5 @@
 #!/bin/bash
-if [[ $(git remote -v | grep github.com) ]]; then
+if [[ $(git remote -v | grep 'github.com\|bitbucket.org') ]]; then
   echo "Not Company Github... Commit Rules NOT enforced"
   exit 0
 else
